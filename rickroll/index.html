@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise Button</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #7ec8db;
+            font-family: Arial, sans-serif;
+        }
+
+        .button {
+            background-color: #9e6fb7;
+            color: #fff;
+            padding: 15px 25px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .button:hover {
+            background-color: #56389f;
+            transform: scale(1.05);
+        }
+
+        .button:active {
+            background-color: #03dac6;
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+
+    <button class="button" onclick="redirect()">Click me for a surprise!</button>
+
+    <script>
+        function redirect() {
+            window.location.href = "https://www.youtube.com/watch?v=xvFZjo5PgG0";
+        }
+    </script>
+
+</body>
+</html>
